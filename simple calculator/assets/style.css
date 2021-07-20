@@ -1,0 +1,80 @@
+body h1 {
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+section .numone input {
+  width: 50%;
+  height: 50px;
+  font-size: larger;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 70px;
+  border-radius: 1vh;
+  border-width: 0.2vh;
+}
+
+section .numtwo input {
+  width: 50%;
+  height: 50px;
+  font-size: larger;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 70px;
+  border-radius: 1vh;
+  border-width: 0.2vh;
+}
+
+section #buttonOne {
+  width: 50%;
+  height: 50px;
+  font-size: larger;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  border: none;
+  background-color: rgb(255, 108, 55);
+  border-radius: 1vh;
+  color: white;
+  font-weight: bolder;
+}
+
+#buttonOne:hover {
+  cursor: pointer;
+}
+
+#result {
+  width: 50%;
+  height: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-left: 90px;
+  margin-top: 190px;
+  border: none;
+  background-color: rgb(58, 55, 255);
+  border-radius: 1vh;
+  color: black;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  section .numone input,
+  section .numtwo input {
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+  }
+
+  #result {
+    margin-top: 270px;
+    margin-left: -70px;
+  }
+
+  section #buttonOne {
+    margin-left: 170px;
+  }
+}
